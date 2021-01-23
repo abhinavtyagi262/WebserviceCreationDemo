@@ -24,11 +24,11 @@ public class WebserviceCreationClass {
 	@GET
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-	public String WebserviceCreationMethod(InputStream incomingData) {
+	public String WebserviceCreationMethod(InputStream inputStream) {
 		
 		StringBuilder stringBuilder = new StringBuilder();
 		try {
-			BufferedReader in = new BufferedReader(new InputStreamReader(incomingData));
+			BufferedReader in = new BufferedReader(new InputStreamReader(inputStream));
 			String line = null;
 			while((line = in.readLine())!=null) {
 				stringBuilder.append(line);
