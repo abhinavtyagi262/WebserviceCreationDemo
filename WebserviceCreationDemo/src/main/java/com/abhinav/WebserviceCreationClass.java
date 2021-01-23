@@ -35,7 +35,7 @@ public class WebserviceCreationClass {
 			}
 		}	
 		catch(Exception e) {
-			log.error("Error occurred while reading incoming data: " + e );
+			log.error("Error occurred while reading inputStream: " + e );
 		}
 		
 		String requestString = new String(stringBuilder.toString());
