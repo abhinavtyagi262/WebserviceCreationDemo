@@ -43,8 +43,8 @@ public class WebserviceCreationClass {
 		System.out.println("Request is: " + requestString);
 		
 		String responseString = requestString;
-		log.info("Response is: " + requestString);
-		System.out.println("Response is: " + requestString);
+		log.info("Response is: " + responseString);
+		System.out.println("Response is: " + responseString);
 		
 		return responseString;
 	}
